@@ -2,7 +2,11 @@
 
 ## Generate CodeRefiner workspace for live coding.
 
-export PS1="\[\e[36m\]\W\[\e[m\] \[\e[31m\]\n\\$\[\e[m\] "
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+# export LSCOLORS=dxfxcxdxbxegedabagacad
+
+export PS1="\[\e[01;36m\]\W\[\e[m\] \[\e[31m\]\n\\$\[\e[m\] "
 if [[ -d "coderefinery" ]]
 then
     source coderefinery/bin/activate
