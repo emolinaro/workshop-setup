@@ -11,8 +11,9 @@ else
     ## desable Dropbox sync
     # xattr -w com.dropbox.ignored 1 $PWD/coderefinery
     source coderefinery/bin/activate
-    pip install --upgrade pip 
-    pip install -r requirements.txt
+    pip install -q --upgrade pip 
+    pip install -q -r requirements.txt
+    printf "Setup completed.\n"
 fi
 
 
