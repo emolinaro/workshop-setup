@@ -1,0 +1,12 @@
+numpy
+matplotlib
+jupyter
+jupyterlab
+ipywidgets
+pandas
+seaborn
+sphinx
+sphinx_rtd_theme
+pytest
+pycodestyle
+

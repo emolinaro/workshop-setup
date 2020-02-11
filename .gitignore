@@ -1,0 +1,10 @@
+.DS_store
+.env
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+# Sphinx documentation
+docs/_build/
+coderefinery
+
