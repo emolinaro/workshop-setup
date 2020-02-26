@@ -2,6 +2,7 @@ numpy
 matplotlib
 jupyter
 jupyterlab
+nodejs
 ipywidgets
 pandas
 seaborn
