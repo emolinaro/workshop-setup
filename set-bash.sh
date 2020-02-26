@@ -17,6 +17,18 @@ else
     source coderefinery/bin/activate
     pip install -q --upgrade pip 
     pip install -q -r requirements.txt
+    ## enable nbdime extension
+    nbdime extensions --enable > /dev/null 2>&1
+    ## enable jupyterlab-git
+    jupyter serverextension enable --py jupyterlab_git > /dev/null 2>&1
+    jupyter lab build > /dev/null 2>&1
+    ## install JupyterLab Extension Manager
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager > /dev/null 2>&1
+    ## install Jupyter Notebook Widgets Extension
+    jupyter nbextension enable --py widgetsnbextension > /dev/null 2>&1
+    ## customize JupyterLab terminal
+    cp terminal_plugin.json coderefinery/share/jupyter/lab/schemas/@jupyterlab/terminal-extension/plugin.json > /dev/null 2>&1
+
     printf "Setup completed.\n"
 fi
 
