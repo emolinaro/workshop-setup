@@ -12,6 +12,6 @@ This repository creates the basic configuration setup for CodeRefinery lessons.
   ```
 - inside the workshop folder, run the command:
   ```bash
-  source set-bash.sh
+  source set-env.sh > /dev/null 2>&1
   ```
   
