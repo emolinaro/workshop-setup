@@ -1,6 +1,6 @@
 .DS_Store
 .env
-# Byte-compiled
+## Byte-compiled
 __pycache__/
 *.py[cod]
 *$py.class
@@ -10,3 +10,12 @@ coderefinery
 
 .ipynb_checkpoints/
 .Rhistory
+
+
+## folders created for the git collaborative lesson 
+centralized-workflow-exercise
+forking-workflow-exercise
+
+## folders created for the jupyter lesson
+jupyterlab-demo
+
