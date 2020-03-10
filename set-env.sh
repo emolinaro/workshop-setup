@@ -23,24 +23,29 @@ else
     nbdime extensions --enable 
     
     ## enable jupyterlab-git
-    jupyter serverextension enable --py jupyterlab_git 
+    jupyter serverextension enable --py jupyterlab_git
     jupyter lab build 
     
     ## install JupyterLab Extension Manager
-    jupyter labextension install @jupyter-widgets/jupyterlab-manager 
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.1.0   
     
     ## install DataRegistry extension
-    jupyter labextension install @jupyterlab/dataregistry-extension 
+    jupyter labextension install @jupyterlab/dataregistry-extension@3.0.0 
 
     ## install support for hdf5 files
-    pip install jupyterlab_hdf
-    jupyter labextension install @jupyterlab/hdf5
+    pip install jupyterlab_hdf==0.3.0
+    jupyter labextension install @jupyterlab/hdf5@0.3.0
 
     ## install TOC extension
-    jupyter labextension install @jupyterlab/toc 
+    jupyter labextension install @jupyterlab/toc@2.0.0  
 
-    ## install Collapsible Hradings extension
-    jupyter labextension install @aquirdturtle/collapsible_headings 
+    ## install Collapsible Headings extension
+    jupyter labextension install @aquirdturtle/collapsible_headings@0.5.0 
+
+    ## install Code Formatter
+    jupyter labextension install @ryantam626/jupyterlab_code_formatter@1.1.0
+    pip install jupyterlab_code_formatter==1.1.0 
+    jupyter serverextension enable --py jupyterlab_code_formatter 
 
     ## install Jupyter Notebook Widgets Extension
     jupyter nbextension enable --py widgetsnbextension 
